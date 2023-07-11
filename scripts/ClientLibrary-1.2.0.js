@@ -8,6 +8,7 @@
         var settings = $.extend({
             // These are the defaults.
             theme: "bluehorizon",
+            themeResourcesCustomLink: "",
             amountOfLoan: 0,
             title: "Housing Loan Calculator",
             width: 550,
@@ -58,7 +59,7 @@
             link.id = cssId;
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = "themes/" + settings.theme + ".css";
+            link.href = themeResourcesCustomLink + "themes/" + settings.theme + ".css";
             link.media = 'all';
             head.appendChild(link);
         }
