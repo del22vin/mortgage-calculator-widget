@@ -59,7 +59,7 @@
             link.id = cssId;
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = themeResourcesCustomLink + "themes/" + settings.theme + ".css";
+            link.href = settings.themeResourcesCustomLink + "themes/" + settings.theme + ".css";
             link.media = 'all';
             head.appendChild(link);
         }
