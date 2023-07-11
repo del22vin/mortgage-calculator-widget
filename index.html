@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <!--include this-->
+    <!--<link id="HousingLoanCalculatorCss" href="../Themes/Bluehorizon.css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+
+    <div id="HousingLoanCalculatorContainer"><div id="calculatorLoad"></div><div id="loadMsg">Loading Mortgage Calculator...</div></div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.12.1/jquery-ui.min.js"></script>
+    <!--include this-->
+    <script src="../scripts/ClientLibrary-1.2.0.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function(e){
+
+
+            $("#HousingLoanCalculatorContainer").HousingLoanCalculator({
+                amountOfLoan: 3500000,
+                theme: "bluehorizon"
+            });
+            
+            //RenderLoanCalculator("bluehorizon", "Housing Loan Calculator", 2000000, 650);
+
+        }
+
+    </script>
+</body>
+</html>
