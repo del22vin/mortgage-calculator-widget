@@ -58,7 +58,7 @@
             link.id = cssId;
             link.rel = 'stylesheet';
             link.type = 'text/css';
-            link.href = "../Themes/" + settings.theme + ".css";
+            link.href = "themes/" + settings.theme + ".css";
             link.media = 'all';
             head.appendChild(link);
         }
