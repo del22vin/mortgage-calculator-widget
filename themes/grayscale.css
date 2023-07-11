@@ -1,0 +1,865 @@
+﻿
+#calculatorLoad {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+      margin: auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/**UI AUTOCOMPLETE DROPDOWN*/
+.ui-menu .ui-menu-item a {
+    color: #000000;
+}
+
+.imageHolder {
+    display: none;
+    float: right;
+}
+
+    .imageHolder .imageContent {
+        background-color: #CCC;
+        width: 96px;
+        height: 96px;
+    }
+
+.actionButtonGroup {
+    float: left;
+    width: 96%;
+    clear: both;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 0px;
+    padding-top: 1px;
+}
+
+    .actionButtonGroup > .top {
+        display: none;
+    }
+
+    .actionButtonGroup > .middle {
+        display: block;
+        float: none;
+        clear: both;
+    }
+
+        .actionButtonGroup > .middle > .middleLeft {
+            display: inline;
+            float: left;
+            width: 16px;
+            height: 24px;
+        }
+
+        .actionButtonGroup > .middle > .middleCenter {
+            display: inline;
+            float: left;
+        }
+
+        .actionButtonGroup > .middle > .middleRight {
+            display: none;
+            float: left;
+            width: 16px;
+            height: 24px;
+        }
+
+    .actionButtonGroup > .bottom {
+        display: none;
+    }
+
+
+
+.validationSummaryErrors {
+    display: none;
+}
+
+.fieldValidationError {
+    display: block;
+    margin: 0 0 0 216px;
+    clear: both;
+    font-size: 10px;
+    color: Red;
+}
+
+.mainContent > .middle > .middleCenter {
+    padding: 8px 0 24px;
+}
+
+#MessageBoxDialog {
+    padding: 10px;
+}
+
+    #MessageBoxDialog .messageBoxIcon {
+        /*width: 64px;
+        height: 64px;
+        float: left;*/
+    }
+
+        #MessageBoxDialog .messageBoxIcon[data-messageboxicon=critical] {
+            /*background: url(Images/FederationWorkspace/ExceptionHandling/PgErrorIcon-64.png) center center no-repeat;*/
+        }
+
+        #MessageBoxDialog .messageBoxIcon[data-messageboxicon=question] {
+            /*background: url(Images/Common/Information-64.png) center center no-repeat;*/
+        }
+
+        #MessageBoxDialog .messageBoxIcon[data-messageboxicon=exclamation] {
+            /*background: url(Images/Default/generic_noicondefault_64x64.png) center center no-repeat;*/
+            margin-right: 8px;
+        }
+
+        #MessageBoxDialog .messageBoxIcon[data-messageboxicon=information] {
+            /*background: url(Images/Common/Information-64.png) center center no-repeat;*/
+        }
+
+    #MessageBoxDialog .messageBoxTitle {
+        margin: 16px 5px 2px 0;
+    }
+
+    #MessageBoxDialog .messageBoxDescription {
+    }
+
+
+
+.ui-tabs .ui-tabs-nav {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #E5E5E5;
+    border-left: none;
+    background: #A778B4;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    display: none;
+}
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: none;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+}
+
+.actionButtonGroup > .top {
+    display: none;
+}
+
+.actionButtonGroup > .middle > .middleCenter {
+    text-align: right;
+    margin-right: 0px;
+}
+
+/*----------------------------- begin property div -------------------------------*/
+
+.propertyDiv {
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+}
+
+    .propertyDiv > .propertyNameLabel {
+        text-align: left;
+        width: 168px;
+        line-height: 24px;
+        /*margin: 8px 16px;
+        padding: 0 4px;*/
+        white-space: nowrap;
+            vertical-align: middle;
+    padding-top: 8px;
+     width: 30%;
+    display: inline-block;
+    float: none;
+    }
+
+    .propertyDiv > .propertyDisplayValueTextBox, .propertyDiv > .propertyValueTextBox {
+    height: 40px;
+    vertical-align: middle;
+    border: 2px solid #96999e;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-left: 8px;
+            width: 70%;
+    display: inline-block;
+    float: none;
+    max-width: 100%;
+    }
+
+       .minCalcuContainer .propertyDiv > .propertyNameLabel {
+           float: left;
+       text-align: left;
+        width: 168px;
+        line-height: 24px;
+        /*margin: 8px 16px;
+        padding: 0 4px;*/
+        white-space: nowrap;
+            vertical-align: middle;
+    padding-top: 8px;
+    width: 100%;
+    display: inline-block;
+    float: none;
+    }
+    .minCalcuContainer .propertyDiv > .propertyDisplayValueTextBox, .minCalcuContainer .propertyDiv > .propertyValueTextBox {
+     height: 40px;
+    vertical-align: middle;
+    border: 2px solid #96999e;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    max-width: 100%;
+    display: inline-block;
+    float: none;
+    width: 100%;
+    /* max-width: 300px; */
+    }
+
+    .propertyDiv > .propertyDisplayValueDropDownList {
+        float: left;
+        text-align: left;
+        width: 51%;
+        line-height: 24px;
+        height: 26px;
+        margin: 8px 0 0 8px;
+        border: 1px solid #AAA;
+        background-color: #FFF;
+    }
+
+    .propertyDiv > .propertyValueCheckBox {
+        float: left;
+        height: 26px;
+        margin: 8px 0 0 8px;
+    }
+
+    .propertyDiv > .propertyValueTextArea {
+    }
+
+    .propertyDiv > .propertyKeyValueDropDownList, .propertyDiv > .propertyKeyValueTextBox {
+        display: none;
+    }
+
+    .propertyDiv > .propertyContextMenuButton {
+
+    }
+
+        .propertyDiv > .propertyContextMenuButton:hover {
+
+        }
+
+
+        .propertyDiv > .propertyContextMenuButton > img {
+            display: none;
+        }
+
+
+        .propertyDiv > .propertyContextMenuButton > span {
+            display: none;
+        }
+
+.propertyPopover > .propertyPopoverIcon {
+    float: left;
+
+    width: 16px;
+    height: 24px;
+    padding-top: 4px;
+}
+
+.propertyPopover > .propertyPopoverTitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 8px 24px;
+}
+
+.propertyPopover > .propertyPopoverDescription {
+    font-size: 14px;
+    line-height: 1.2em;
+    margin: 0 0 0 24px;
+}
+
+.propertyDiv > .propertyAlertLabel {
+    display: none;
+    margin: 0 0 0 216px;
+    clear: both;
+    font-size: 10px;
+}
+
+.propertyAlertLabel.fail {
+    display: block;
+    color: Red;
+}
+
+.propertyDiv .propertyNotification {
+    display: none;
+    clear: both;
+}
+
+.propertyDiv .propertyNotificationIcon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 6px 4px 4px 2px;
+}
+
+    .propertyDiv .propertyNotificationIcon[data-propertynotificationicon=information] {
+
+    }
+
+    .propertyDiv .propertyNotificationIcon[data-propertynotificationicon=warning] {
+       
+    }
+
+    .propertyDiv .propertyNotificationIcon[data-propertynotificationicon=error] {
+        
+    }
+
+    .propertyDiv .propertyNotificationIcon[data-propertynotificationicon=success] {
+      
+    }
+
+    .propertyDiv .propertyNotificationIcon[data-propertynotificationicon=progress] {
+   
+    }
+
+.propertyDiv .propertyNotificationMessage {
+    font-size: 11px;
+    float: left;
+    padding-top: 4px 0;
+}
+
+    .propertyDiv .propertyNotificationMessage[data-propertynotificationmessage=information], .propertyNotificationMessage[data-propertynotificationmessage=warning] {
+        color: #000;
+    }
+
+    .propertyDiv .propertyNotificationMessage[data-propertynotificationmessage=error] {
+        color: red;
+    }
+
+    .propertyDiv .propertyNotificationMessage[data-propertynotificationmessage=progress] {
+        color: #000;
+    }
+
+    .propertyDiv .propertyNotificationMessage[data-propertynotificationmessage=success] {
+        color: #438a1a;
+    }
+
+/*----------------------------- end property div -------------------------------*/
+/*----------------------------begin image upload-----------------------*/
+
+#ImageUrlFileUploadContainer {
+    padding: 0;
+    width: 12%;
+    display: inline-block;
+    text-align: center;
+}
+
+#ImageUrlFileUploadNotification {
+    padding: 8px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    #ImageUrlFileUploadNotification ul {
+        line-height: 1.5;
+        font-size: 0.8em;
+        width: 38%;
+    }
+
+        #ImageUrlFileUploadNotification ul li {
+            margin-bottom: 10px;
+        }
+
+#HeaderImageUrlFileUploadContainer {
+    padding: 0;
+    width: 12%;
+    display: inline-block;
+    text-align: center;
+}
+
+#HeaderImageUrlFileUploadNotification {
+    padding: 8px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    #HeaderImageUrlFileUploadNotification ul {
+        line-height: 1.5;
+        font-size: 0.8em;
+        width: 38%;
+    }
+
+        #HeaderImageUrlFileUploadNotification ul li {
+            margin-bottom: 10px;
+        }
+
+/*----------------------------end image upload-----------------------*/
+
+
+/*-------------- begin icon, title and description --------------*/
+
+.mainContent > .middle > .middleCenter > .headerIcon {
+    margin: 20px 20px 20px 0;
+}
+
+.mainContent > .middle > .middleCenter > .headerText .headerTitle {
+    margin: 20px 20px 0 80px;
+}
+
+.mainContent > .middle > .middleCenter > .headerText .headerDescription {
+    margin: 8px 20px 8px 80px;
+}
+/*--------------- end icon, title and description -----------------*/
+
+
+/**-------------------edits-----------------------------------------*/
+
+@-webkit-keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes fadein {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+#C88ECMHousingLoanCalcuContainer {
+  opacity:1;
+  -moz-animation   : fadein 1.5s linear;
+  -webkit-animation: fadein 1.5s linear;
+  animation        : fadein 1.5s linear;
+}
+
+#C88ECMHousingLoanCalcuContainer #loadMsg {
+        margin: auto;
+    text-align: center;
+    margin-top: 16px;
+    color: #3498db;
+    font-weight: bold;
+}
+#C88ECMHousingLoanCalcuContainer {
+        width: 100%;
+    /*max-width: 640px;*/
+
+    background: #FFFFFF;
+    /*max-width: 550px;
+    min-height: 850px;*/
+        max-width: 100%;
+        font-family:sans-serif;
+
+}
+    #C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent {
+        border: 4px solid #272727;
+    border-radius: 8px;
+        -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.13);
+           box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.32);
+        background-image: url('Images/Grayscale/houseLoancalcu-bg.jpg');
+        background-repeat: no-repeat;
+            background-size: contain;
+    background-position-y: bottom;
+    }
+        #C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .middle > .middleLeft {
+        display:none;
+        }
+
+#C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .top{
+        background: #272727;
+    color: #FFFFFF;
+    font-weight:bold;
+    font-size:14px;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+
+
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorIcon, #C88ECMHousingLoanCalcuContainer #LoanCalculatorTitle, #C88ECMHousingLoanCalcuContainer #LoanCalculatorDescription {
+display:none;
+}
+
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorPropertiesTabControl > ul > li {
+    display:none;
+}
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorIdPropertyDiv {
+display:none;
+}
+#C88ECMHousingLoanCalcuContainer .propertyPopover {
+display:none;
+}
+#C88ECMHousingLoanCalcuContainer .propertyDiv {
+    float: none;
+                width:100%;
+    padding: 0;
+    display: inline-block;
+    margin: 8px 0;
+    text-align: left;
+}
+#C88ECMHousingLoanCalcuContainer .propertyDiv > input, #C88ECMHousingLoanCalcuContainer .propertyDiv > select {
+        vertical-align: middle;
+    height: 32px;
+        width: 100%;
+    max-width: 300px;
+}
+#C88ECMHousingLoanCalcuContainer .actionButtonGroup > .middle > .middleCenter {
+    float: none;
+}
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorActionButtonGroup {
+        margin: auto;
+    text-align: center;
+    display: block;
+    float: none;
+        margin: 0;
+        width:100%;
+    padding:0;
+}
+#C88ECMHousingLoanCalcuContainer .actionButtonGroup > .middle > .middleCenter > a {
+background: #1c355e;
+    padding: 16px;
+    margin: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #1c355e;
+    border-radius: 8px;
+    width: 124px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+#C88ECMHousingLoanCalcuContainer .actionButtonGroup > .middle > .middleCenter > a:hover {
+background: #28b3eb;
+    border: 2px solid #28b3eb;
+}
+#C88ECMHousingLoanCalcuContainer #ClearLoanCalculatorButton {
+display:none;
+}
+    #C88ECMHousingLoanCalcuContainer #ApplyLoanCalculatorButton img {
+    display:none;
+    }
+#C88ECMHousingLoanCalcuContainer #ApplyLoanCalculatorButton {
+    background: #272727;
+    padding: 12px;
+    margin: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #272727;
+    border-radius: 8px;
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+}
+#C88ECMHousingLoanCalcuContainer #ApplyLoanCalculatorButton:hover {
+    background: #e4e4e4;
+    border: 1px solid #272727;
+    color: #272727;
+}
+
+#C88ECMHousingLoanCalcuContainer #ComputationContainer {
+    margin-top: 0;
+    margin-bottom: 0;
+    /*border: 1px solid #c1c4ca;*/
+    /*padding-top: 24px;*/
+    padding-bottom: 10px;
+
+}
+#C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .bottom {
+display:none;
+}
+
+#C88ECMHousingLoanCalcuContainer #ComputationHeaderSec1 {
+color: #444444;
+    font-size: 24px;
+ font-weight: bold;
+        padding: 0;
+    margin: 0;
+    padding-bottom: 8px;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationHeaderSec1 span{
+color: #444444;
+    font-size: 24px;
+    font-weight: bold;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationHeaderSec2 {
+    color: #444444;
+    font-size: 18px;
+                        padding: 0;
+    margin: 0;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationHeaderSec2 span{
+ color: #444444;
+    font-size: 18px;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationMonthlyContent {
+    /*margin-top: 16px;*/
+    margin-bottom: 8px;
+    padding-top: 8px;
+    padding-bottom: 18px;
+    background: #f3f3f3;
+}
+#C88ECMHousingLoanCalcuContainer #MonthlyPriceComputation {
+    font-size: 36px;
+    color: #272727;
+    font-weight: bold;
+    line-height: 64px;
+}
+#C88ECMHousingLoanCalcuContainer #MonthlyLabel {
+    color: #272727;
+    font-weight: bold;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationDetailsContent > table {
+        margin: auto;
+    text-align: left;
+        width: 100%;
+        max-width: 288px;
+        font-size: 14px;
+        padding: 0;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationDetailsContent > table td {
+padding:8px;
+}
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorActionButtonGroup .button img{
+    display:none;
+}
+#C88ECMHousingLoanCalcuContainer #AmountOfLoanValueTextBox {
+    background: #efefef;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorForm #GeneralTabContent{
+               padding: 8px;
+      margin-bottom: 4px;
+}
+#C88ECMHousingLoanCalcuContainer #ComputationHeader {
+    padding: 24px;
+background-image: url('Images/Grayscale/mortgageCalculator-result-bg1-greyscale.jpg');
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+
+
+#C88ECMHousingLoanCalcuContainer #LoanCalculatorForm {
+    padding: 8px;
+    box-sizing: border-box;
+    padding-top:0;
+    text-align:center;
+    background: white;
+}
+
+#C88ECMHousingLoanCalcuContainer #ComputationDisclamer {
+        font-size: 11px;
+    max-width: 360px;
+    margin: auto;
+    padding-top: 6px;
+    line-height: 18px;
+        padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+        color: #1c355e;
+    border-top: 1px solid #b3bac5;
+    margin-top: 10px;
+   
+}
+
+#C88ECMHousingLoanCalcuContainer #BrandLogo {
+    background-image: url('Images/Grayscale/logo-ecomparemo.png');
+background-repeat: no-repeat;
+background-size:cover;
+     width: 200px;
+    height: 35px;
+    margin: auto;
+}
+
+        #LoanCalculatorPropertiesTabControl > ul {
+    display:none;
+    }
+
+        
+#C88ECMHousingLoanCalcuContainer #CalculatorLogo {
+    background-image: url(Images/Grayscale/logo-header.png);
+    background-size: contain;
+    width: 148px;
+    height: 37px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+#C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .top > .topLeft, #C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .top > .topRight {
+display: none;
+}
+
+#C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .top > .topCenter {
+        padding-top: 8px;
+    padding-bottom: 8px;
+        vertical-align:middle;
+text-align: center;
+}
+#C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .top > .topCenter {
+vertical-align:middle;
+}
+
+#C88ECMHousingLoanCalcuContainer #ComputationDetailsContent, #C88ECMHousingLoanCalcuContainer #ComputationDetailsContent table, #C88ECMHousingLoanCalcuContainer #ComputationDetailsContent tr, #C88ECMHousingLoanCalcuContainer #ComputationDetailsContent td{
+    background:none;
+}
+
+#C88ECMHousingLoanCalcuContainer label {
+
+    font-weight: bold;
+    font-size: 14px;
+        background: none;
+    padding: 0;
+    margin: 0;
+}
+
+   #C88ECMHousingLoanCalcuContainer .propertyDiv > input, #C88ECMHousingLoanCalcuContainer .propertyDiv > select {
+        vertical-align: middle;
+    height: 32px;
+        width: 70%; /*HEREEEEEEEEEEEEEEEEEEEEEEEEEEE**/
+        max-width: 100%;
+    }
+
+#C88ECMHousingLoanCalcuContainer select {
+    -webkit-appearance: menulist !important;
+}
+    #C88ECMHousingLoanCalcuContainer select.disabledSelect {
+    -webkit-appearance: none !important;
+    }
+ #C88ECMHousingLoanCalcuContainer.minCalcuContainer .propertyDiv > .propertyNameLabel {
+           float: left;
+       text-align: left;
+        width: 168px;
+        line-height: 24px;
+        /*margin: 8px 16px;
+        padding: 0 4px;*/
+        white-space: nowrap;
+            vertical-align: middle;
+    padding-top: 8px;
+    width: 100%;
+    display: inline-block;
+    float: none;
+    }
+    #C88ECMHousingLoanCalcuContainer.minCalcuContainer .propertyDiv > .propertyDisplayValueTextBox, #C88ECMHousingLoanCalcuContainer.minCalcuContainer .propertyDiv > .propertyValueTextBox {
+     height: 32px;
+    vertical-align: middle;
+    border: 2px solid #96999e;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    max-width: 100%;
+    display: inline-block;
+    float: none;
+    width: 100%;
+    /* max-width: 300px; */
+    }
+
+        #C88ECMHousingLoanCalcuContainer.minCalcuContainer {
+    font-family:sans-serif;
+    }
+
+        
+        #LoanCalculatorActionButtonGroup > .middle > .middleLeft {
+    display:none;
+}
+
+#YouMayOwnLabel {
+        color: #272727;
+    font-size: 18px;
+}
+
+    #C88ECMHousingLoanCalcuContainer.minCalcuContainer .propertyDiv {
+        margin: 0;
+        
+    }
+
+    #C88ECMHousingLoanCalcuContainer.minCalcuContainer #YouMayOwnLabel {
+    font-size: 16px;
+    }
+
+    #ProductImageCalculator {
+    border: 5px solid #f3f3f3;
+}
+/**-------------------end edits------------------------------------*/
+
+/*--------------- begin responsive template --------------------*/
+
+
+@media(max-width: 481px) {
+#C88ECMHousingLoanCalcuContainer #ComputationHeader {
+    padding: 14px;
+}
+#C88ECMHousingLoanCalcuContainer .tabContent .propertyDiv > .propertyNameLabel {
+    width: 100%;
+}
+#C88ECMHousingLoanCalcuContainer .tabContent .propertyDiv > .propertyValueTextBox, #C88ECMHousingLoanCalcuContainer .propertyNotification {
+    width: 100%;
+}
+#C88ECMHousingLoanCalcuContainer .tabContent .propertyDiv > .propertyNameLabel {
+    font-size: 14px;
+}
+
+#C88ECMHousingLoanCalcuContainer .tabContent .propertyDiv {
+        text-align: left;
+        /*width: 48%;
+        display: inline-block;*/
+    }
+    #C88ECMHousingLoanCalcuContainer .tabContent .propertyDiv > .propertyNameLabel {
+    display: block;
+    }
+        #C88ECMHousingLoanCalcuContainer #LoanCalculatorPropertiesTabControl > ul {
+    display:none;
+    }
+    #C88ECMHousingLoanCalcuContainer #ComputationContainer {
+        margin-top: 0;
+    }
+    #C88ECMHousingLoanCalcuContainer #ComputationHeaderSec1 {
+        font-size: 20px;
+    }
+    #C88ECMHousingLoanCalcuContainer #ComputationHeaderSec2 {
+    font-size: 16px;
+    }
+    #C88ECMHousingLoanCalcuContainer #MonthlyPriceComputation {
+        font-size: 36px;
+            line-height: 36px;
+    }
+    #C88ECMHousingLoanCalcuContainer #MonthlyLabel {
+    font-size: 14px;
+    }
+}
+
+@media(max-width: 320px) {
+        #C88ECMHousingLoanCalcuContainer .propertyDiv {
+        margin: 0;
+        
+    }
+
+    #C88ECMHousingLoanCalcuContainer #YouMayOwnLabel {
+    font-size: 16px;
+    }
+}
+/*--------------- end responsive template ----------------------*/
+
+
+#IconImagePropertyDiv, #HeaderIconImagePropertyDiv {
+    display: none;
+}
+/*------------------------  begin account -------------------------*/
+
+#FederationWorkspaceEditPersonalInformationListViewItem,
+#FederationWorkspaceEditContactDetailsListViewItem {
+    display:none;
+}
+
+/*--------------------------  end account ----------------------*/
