@@ -479,10 +479,10 @@ font-family:sans-serif;
         -webkit-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.13);
     -moz-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.13);
         box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.32);
-        background-image: url('Images/BlueHorizon/houseLoancalcu-bg.jpg');
+        /* background-image: url('Images/BlueHorizon/houseLoancalcu-bg.jpg');
         background-repeat: no-repeat;
             background-size: contain;
-    background-position-y: bottom;
+    background-position-y: bottom; */
 
     }
         #C88ECMHousingLoanCalcuContainer > .loanCalculatorMainContent > .middle > .middleLeft {
